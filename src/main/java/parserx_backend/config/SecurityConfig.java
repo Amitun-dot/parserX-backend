@@ -60,7 +60,8 @@ public class SecurityConfig {
                         .requestMatchers(
                                 "/api/auth/register",
                                 "/api/auth/login",
-                                "/api/test/nvidia"
+                                "/api/test/nvidia",
+                                "/actuator/health"
                         ).permitAll()
                         .anyRequest().authenticated()
                 )
